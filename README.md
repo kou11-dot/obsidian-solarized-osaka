@@ -1,6 +1,6 @@
 # Solarized Osaka
 
-A dark Obsidian theme inspired by [Solarized Osaka](https://github.com/craftzdog/solarized-osaka).
+A dark Obsidian theme inspired by [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim).
 
 ## Development
 
