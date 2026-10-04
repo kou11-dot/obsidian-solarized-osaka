@@ -1,16 +1,329 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+/* Solarized Osaka palette */
+.theme-dark {
+	/* base */
+	--so-base-05: #001419;
+	--so-base-04: #002129;
+	--so-base-03: #002b36;
+	--so-base-02: #073642;
+	--so-base-01: #586e75;
+	--so-base-00: #657b83;
+	--so-base-0: #9eacad;
+	--so-base-1: #abd8b8;
+	--so-base-2: #eee8d5;
+	--so-base-3: #fdf6e3;
+	--so-base-4: #ffffff;
+
+	/* yellow */
+	--so-yellow-50: #fff5d0;
+	--so-yellow-100: #ffe999;
+	--so-yellow-300: #ffc100;
+	--so-yellow-500: #b58900;
+	--so-yellow-700: #664d00;
+	--so-yellow-900: #332700;
+	--so-yellow-950: #1d1600;
+
+	/* orange */
+	--so-orange-50: #ffccb7;
+	--so-orange-100: #ff9468;
+	--so-orange-300: #f8520e;
+	--so-orange-500: #cb4b16;
+	--so-orange-700: #a13b11;
+	--so-orange-900: #5c220a;
+	--so-orange-950: #3c1403;
+
+	/* red */
+	--so-red-50: #ffd2d1;
+	--so-red-100: #ff9d9b;
+	--so-red-300: #f6524f;
+	--so-red-500: #dc322f;
+	--so-red-700: #b7211f;
+	--so-red-900: #57100f;
+	--so-red-950: #380605;
+
+	/* magenta */
+	--so-magenta-50: #ffb9db;
+	--so-magenta-100: #ff77b9;
+	--so-magenta-300: #f255a1;
+	--so-magenta-500: #d33682;
+	--so-magenta-700: #b02669;
+	--so-magenta-900: #541232;
+	--so-magenta-950: #38071e;
+
+	/* violet */
+	--so-violet-50: #eaebff;
+	--so-violet-100: #cccfff;
+	--so-violet-300: #9ca0ed;
+	--so-violet-500: #6c71c4;
+	--so-violet-700: #494fb6;
+	--so-violet-900: #25285b;
+	--so-violet-950: #16172c;
+
+	/* blue */
+	--so-blue-50: #d7eeff;
+	--so-blue-100: #aadcff;
+	--so-blue-300: #49aef5;
+	--so-blue-500: #268bd2;
+	--so-blue-700: #1b6497;
+	--so-blue-900: #103956;
+	--so-blue-950: #062439;
+
+	/* cyan */
+	--so-cyan-50: #e2fffd;
+	--so-cyan-100: #b9fffa;
+	--so-cyan-300: #29eedf;
+	--so-cyan-500: #2aa198;
+	--so-cyan-700: #1a6265;
+	--so-cyan-900: #103b3d;
+	--so-cyan-950: #052223;
+
+	/* green */
+	--so-green-50: #ebffd7;
+	--so-green-100: #d6ffac;
+	--so-green-300: #bafb00;
+	--so-green-500: #859900;
+	--so-green-700: #596600;
+	--so-green-900: #2c3300;
+	--so-green-950: #191d00;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+/* Obsidian color variables */
+.theme-dark {
+	--background-primary: var(--so-base-04);
+	--text-normal: var(--so-base-3);
+	--text-muted: var(--so-base-0);
+	--text-selection: var(--so-base-02);
+	--color-accent: var(--so-cyan-500);
+	--background-modifier-hover: var(--so-base-03);
+	--tab-background-active: var(--so-cyan-950);
+}
+
+/* ====== Notebook Navigator ====== */
+
+.nn-navigation-pane-scroller {
+	background-color: var(--so-base-02);
+}
+
+.nn-list-pane-scroller {
+	background-color: var(--so-base-03);
+}
+
+
+/* ====== Header ====== */
+
+/* Reading View */
+
+.markdown-preview-view h1 {
+	color: var(--so-yellow-300);
+	font-size: 2em;
+}
+
+.markdown-preview-view h2 {
+	color: var(--so-yellow-300);
+	font-size: 1.85em;
+}
+
+.markdown-preview-view h3 {
+	color: var(--so-yellow-300);
+	font-size: 1.7em;
+}
+
+.markdown-preview-view h4 {
+	color: var(--so-yellow-300);
+	font-size: 1.55em;
+}
+
+.markdown-preview-view h5 {
+	color: var(--so-yellow-300);
+	font-size: 1.4em;
+}
+
+.markdown-preview-view h6 {
+	color: var(--so-yellow-300);
+	font-size: 1.25em;
+}
+
+/* Live Preview, Source Mode */
+
+.cm-header-1 {
+	color: var(--so-yellow-300);
+}
+
+.cm-header-2 {
+	color: var(--so-yellow-300);
+}
+
+.cm-header-3 {
+	color: var(--so-yellow-300);
+}
+
+.cm-header-4 {
+	color: var(--so-yellow-300);
+}
+
+.cm-header-5 {
+	color: var(--so-yellow-300);
+}
+
+.cm-header-6 {
+	color: var(--so-yellow-300);
+}
+
+.HyperMD-header-1 {
+	font-size: 2em;
+}
+
+.HyperMD-header-2 {
+	font-size: 1.85em;
+}
+
+.HyperMD-header-3 {
+	font-size: 1.7em;
+}
+
+.HyperMD-header-4 {
+	font-size: 1.55em;
+}
+
+.HyperMD-header-5 {
+	font-size: 1.4em;
+}
+
+.HyperMD-header-6 {
+	font-size: 1.25em;
+}
+
+
+/* ====== Strong Text ====== */
+
+.markdown-preview-view strong {
+	color: var(--so-yellow-300);
+}
+
+/* Strong Text Live Preview, Source Mode */
+
+.cm-strong {
+	color: var(--so-yellow-300);
+}
+
+
+/* ====== Links ====== */
+
+/* Reading View */
+
+.markdown-preview-view a {
+	color: var(--so-orange-500);
+}
+
+
+/* Live Preview, Source Mode */
+
+/* Link text */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline {
+	color: var(--so-orange-500);
+}
+
+/* Link text / formatting */
+.markdown-source-view.mod-cm6 .cm-link {
+	color: var(--so-orange-500);
+}
+
+/* URL */
+.markdown-source-view.mod-cm6 .cm-string.cm-url {
+	color: var(--so-green-500);
+}
+
+
+/* ====== Code ====== */
+
+/* Reading View */
+
+.markdown-preview-view code {
+	background-color: var(--so-base-01);
+}
+
+.markdown-preview-view pre {
+	background-color: var(--so-base-02);
+}
+
+/* Live Preview, Source Mode */
+
+/* Inline Code */
+.markdown-source-view.mod-cm6 .cm-inline-code {
+	background-color: var(--so-base-01);
+}
+
+/* Code block */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+	background-color: var(--so-base-02);
+}
+
+
+/* ====== Lists ====== */
+
+/* Live Preview, Source Mode */
+
+/* 1st level */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 {
+	--list-marker-color: var(--so-green-300);
+}
+
+/* 2nd level */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 {
+	--list-marker-color: var(--so-orange-300);
+}
+
+/* 3rd level */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 {
+	--list-marker-color: var(--so-cyan-300);
+}
+
+/* Reading View */
+
+/* 1st level List */
+.el-ul > ul > li {
+	--list-marker-color: var(--so-green-300);
+}
+
+/* 2nd level List */
+.el-ul > ul > li > ul > li {
+	--list-marker-color: var(--so-orange-300);
+}
+
+/* 3rd level List */
+.el-ul > ul > li > ul > li > ul > li {
+	--list-marker-color: var(--so-cyan-300);
+}
+
+/* 1st level Number */
+.el-ol > ol > li::marker {
+	color: var(--so-green-300);
+}
+
+/* 2nd level Number */
+.el-ol > ol > li > ol > li::marker {
+	color: var(--so-orange-300);
+}
+
+/* 3rd level Number */
+.el-ol > ol > li > ol > li > ol > li::marker {
+	color: var(--so-cyan-300);
+}
+
+
+body {
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 8px;
+	--input-radius: 8px;
+	--tab-radius-active: 3px;
+	--checkbox-radius: 4px;
+	--toggle-radius: 3px;
+	--toggle-thumb-radius: 3px;
+	--slider-thumb-radius: 10px;
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
