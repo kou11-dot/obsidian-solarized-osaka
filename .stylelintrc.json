@@ -1,9 +1,12 @@
 {
     "extends": "stylelint-config-obsidianmd",
-	"rules": {
-		"selector-class-pattern": [
-			"^(HyperMD-[A-Za-z0-9-]+|[a-z][a-z0-9]*(?:-[a-z0-9]+)*)$"
-		],
-		"color-hex-length": "long"
-	}
+    "rules": {
+        "selector-class-pattern": [
+            "^(HyperMD-[A-Za-z0-9-]+|[a-z][a-z0-9]*(?:-[a-z0-9]+)*)$"
+        ],
+        "color-hex-length": "long",
+        "custom-property-pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:_x)?$",
+        "custom-property-empty-line-before": null,
+        "color-function-alias-notation": null
+    }
 }

@@ -16,3 +16,5 @@ node_modules
 
 # Local development
 scripts/sync-local.sh
+
+.backup/
