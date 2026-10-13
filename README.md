@@ -2,6 +2,14 @@
 
 A dark Obsidian theme inspired by [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim) color palette.
 
+![Solarized Osaka - Overview](screenshots/solarized-osaka-01.png)
+
+## More Screenshots
+
+![Callouts, code blocks, and tables](screenshots/solarized-osaka-02.png)
+
+![Graph view](screenshots/solarized-osaka-graph.png)
+
 ## Inspirations and Credits
 
 - [Solarized Osaka for Neovim](https://github.com/craftzdog/solarized-osaka.nvim) — Color palette inspiration.
