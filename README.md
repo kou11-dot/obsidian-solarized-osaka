@@ -21,7 +21,7 @@ A dark Obsidian theme inspired by [Solarized Osaka](https://github.com/craftzdog
 
 Original work in this project is licensed under the Zero-Clause BSD (0BSD) License. See [LICENSE](LICENSE) for details.
 
-The CSS adapted from Obsidian Gruvbox is subject to MIT License. See [THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES) for the applicable license text and copyright notice.
+The CSS adapted from Obsidian Gruvbox is subject to MIT License. See [THIRD-PARTY-LICENSE](THIRD-PARTY-LICENSE) for the applicable license text and copyright notice.
 
 ## Development
 
