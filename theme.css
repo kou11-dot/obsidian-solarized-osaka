@@ -1,3 +1,14 @@
+/*
+ * Portions of this file are adapted from Obsidian Gruvbox:
+ * https://github.com/insanum/obsidian-gruvbox
+ *
+ * Original copyright:
+ * Copyright (c) 2020 Eric Davis
+ *
+ * Licensed under the MIT License.
+ * See THIRD-PARTY-LICENSE for the full license text.
+ */
+
 :root {
 	--so-base-05_x: 0, 20, 25;
 	--so-base-05: rgb(var(--so-base-05_x));
